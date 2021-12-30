@@ -1,0 +1,2 @@
+# npm-fulltest
+fulltest
