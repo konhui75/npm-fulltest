@@ -11,16 +11,17 @@
     },
     "rules": {
         "no-unused-vars": "off",
+        "prettier/prettier": "error"
         //"prettier/prettier": "error"
-        "prettier/prettier": [
-            "error",
-            {
-                "tabWidth": 4,
-                "singleQuote": true
-            }
-            // {
-            //     "usePrettierrc": true
-            // }
-        ]
+        // "prettier/prettier": [
+        //     "error",
+        //     {
+        //         "tabWidth": 4,
+        //         "singleQuote": true
+        //     }
+        //     // {
+        //     //     "usePrettierrc": true
+        //     // }
+        // ]
     }
 }
