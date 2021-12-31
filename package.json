@@ -1,20 +1,45 @@
 {
-  "name": "npm-fulltest",
-  "version": "1.0.0",
-  "description": "[fulltest]",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/konhui75/npm-fulltest.git"
-  },
-  "keywords": ["test"],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/konhui75/npm-fulltest/issues"
-  },
-  "homepage": "https://github.com/konhui75/npm-fulltest#readme"
+    "name": "npm-fulltest",
+    "version": "1.0.0",
+    "description": "[fulltest]",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/konhui75/npm-fulltest.git"
+    },
+    "keywords": [
+        "test"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/konhui75/npm-fulltest/issues"
+    },
+    "homepage": "https://github.com/konhui75/npm-fulltest#readme",
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-promise": "^5.2.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.4",
+        "prettier": "^2.5.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "npm run lint"
+        ]
+    }
 }
