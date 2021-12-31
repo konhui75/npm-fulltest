@@ -11,9 +11,9 @@ function bbb() {
         'ddsadas dsadasdassadas dsadas dadas dsadas dsadas dsadas dsadasdas dsadasdas'
     );
 
-    var _aaa = 'kkkkkk';
+    const _aaa = 'kkkkkk';
 
-    var _html = '';
+    let _html = '';
 
     _html = `dsa dsa
         dsadas dsadasrdas dsadasdasdasd ${_aaa}
